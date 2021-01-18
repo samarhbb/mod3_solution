@@ -6,7 +6,7 @@ body{
 }
 .container h2{
 	font-size:1.5em bold;
-	text-align:center;
+	/*text-align:center;*/
 }
 
 #nav-list{
@@ -38,7 +38,7 @@ border-radius: 4px;
 }
 #details {
 	background-color:grey;
-	text-align:center;
+	/*text-align:center;*/
 	font-size:1.5em bold;
 	position: center;
 
