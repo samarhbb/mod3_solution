@@ -1,17 +1,146 @@
+*{
+	box-sizing:border-box;
+}
+body{
+	background-color:white;
+}
+.container h2{
+	font-size:1.5em bold;
+	text-align:center;
+}
+
+#nav-list{
+	margin-top:20px;
+	padding:auto;
+	float:left;
+	clear:both;
+	width:100%;
+
+
+}
+.navbar .container{
+	
+	width:100%;
+}
+.navbar-brand .navbar-toggle{
+position:relative ;
+float:left;
+background-color: transparent;
+background-image: none;
+border:1px solid black;
+border-radius: 4px;
+}
+.navbar-brand{
+	position:relative;
+	background-color:gray;
+	width:100%;
+	
+}
+#details {
+	background-color:grey;
+	text-align:center;
+	font-size:1.5em bold;
+	position: center;
+
+}
+#details span{
+	font-size:1.8em;
+}
+
+.navbar-brand h1{
+	font-family:lora;
+color:#557a3E;
+font-size:1.5 vw;/*increase 1.5 the default size*/
+text-transform: uppercase;
+font-weight:bold;
+text-shadow: 1px 1px 1px #222;
+margin-top: 0;
+margin-bottom:0;
+margin-left: 0;
+padding-left:0;
+line-height: 0.75;
+float:left; 
+text-align:left;
+}
 
 
 
-/*desktop and tab*/
+
+
+/*desktop*/
+
+@media(min-width:992px){
+	.fa-bars{
+		display:none;
+		visibility:hidden;
+	}
+	.navbar-toggle {
+		display:none;
+		visibility:hidden;
+	}
+	#nav-list{
+		visibility:hidden;
+	}
+}
 
 
 
 
-
-
-/*mobile*/
-
+/*tab*/
+@media(min-width: 768px) and (max-width: 991px){
+	.fa-bars{
+		display:none;
+		visibility: hidden;
+	}
+	.navbar-toggle{
+		display:none;
+		visibility:hidden;
+	}
+	#nav-list{
+		visibility:hidden;
+	}
+}
 
 
 
 
 /*extra small devices*/
+@media(max-width: 767px){
+	.fa-bars{
+		display:inline-block;
+		visibility: visible;
+		
+	}
+	.navbar-toggle{
+		display:inline-block;
+		visibility:visible;
+		
+	}
+	.navbar-collapse{
+		height: 0px;
+	}
+	.navbar-brand button{
+		margin-left:50px;
+	}
+	
+	.navbar-collapse li {
+		display: inline-block!important;
+		position:relative;
+		float:left;
+		padding:0px;
+		margin-right:0px;
+		margin-left:0px;
+		text-align: center;
+		width:100%;
+		border:1px solid black;
+	}
+	.navbar-collapse ul{
+		margin:0px;
+		background-color:lightblue;
+	}
+
+    	
+    	
+
+
+}
