@@ -6,52 +6,50 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <link rel="stylesheet" href="bootstrap4/css/bootstrap.css"></link>
 <link rel="stylesheet" href="CSS/CSS.css"></link>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Module 3 Assignement</title>
 </head>
 <body>
 	<header>
-		<nav id ="header-nav" class="navbar navbar-default">
-		<div class="container">
+		<nav id ="header-nav" class="navbar navbar-default">	
+		<div class="container-fluid">
 			
 				
-				<div class="navbar-brand">
-					<h1 class="col-xs-6">Food, LLC</h1>
+				<div class="navbar-header container-fluid ">
+					<h1 class="pull-left">Food, LLC</h1>
 					
-					<button type="button" class="fas fa-bars navbar-toggle collapsed col-xs-6 " data-toggle="collapse" 
+					<button id="btn-collapse" type="button" class="fa fa-bars  navbar-toggle collapsed " data-toggle="collapse" 
 					data-target ="#collapsable-nav"aria-expanded="false">
-					<span class="sr-only">toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>	
+			
+					<!--d-none d-sm-block d-xs-block d-md-block d-lg-block-->
+						
 				</button>
 			
 				 
-					<div id="collapsable-nav" class=" collapsing navbar-collapse ">
+					<div id="collapsable-nav" class=" collapsing navbar-collapse container-fluid  ">
 				<ul id="nav-list" class=" nav navbar-nav ">
 					<li>
-						<div>Chiken</div>
+						<div class="text-center">Chiken</div>
 					</li>
 					<li>
-						<div>Beef</div>
+						<div class="text-center">Beef</div>
 					</li>
 					<li>
-						<div>Sushi</div>
+						<div class="text-center">Sushi</div>
 					</li>		
 				</ul>
                     </div><!--collapsable-nav-->
                 </div> <!--navbar-brand--> 
-			</div><!--header-nav-->	
+			</div><!--container end-->	
 		</nav>
 	</header>
-	<div id="main-content"class="container">
-		 <div><h2 class="text-center">Our Menu</h2></div>
-		 <div id="details">
-		 	<div class="text-center"><span>Chicken</span></div>
-		 	<p class= "text-center">Using a slow-cooker is one of our favorite, easy ways to prepare chicken thighs. Searing the chicken thighs may seem like an annoying step, but trust us, it's worth it. Not only does it get the chicken skin nice and crispy (because it does lose some crispiness in the slow cooker), but it also caramelizes the fat, adding a ton more flavor. If you don't want to do it, that's totally fine. You can just throw the chicken in the slow cooker. The sauce, you'll be happy to know, doesn't need any precooking. It just gets poured right in and forgotten about until dinner time.</p>
-		</div>
-	</div>
+	<section id="main-content"class="container">
+		 <div class="col-xs-12 text-center"><h2 class="text-center">Our Menu</h2></div>
+		 	<div id="title"class="col-xs-12 text-center"><span>Chicken</span></div>
+		 	<p class= "col-xs-12">Using a slow-cooker is one of our favorite, easy ways to prepare chicken thighs. Searing the chicken thighs may seem like an annoying step, but trust us, it's worth it. Not only does it get the chicken skin nice and crispy (because it does lose some crispiness in the slow cooker), but it also caramelizes the fat, adding a ton more flavor. If you don't want to do it, that's totally fine. You can just throw the chicken in the slow cooker. The sauce, you'll be happy to know, doesn't need any precooking. It just gets poured right in and forgotten about until dinner time.
+		 	</p>
+		</section>
+	
 	<script src="bootstrap4/js/jquery-3.5.1.js"></script>
 <script src="bootstrap4/js/bootstrap.min.js"></script>
 </body>
